@@ -1,0 +1,75 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Alert and document</title>
+	<link rel="stylesheet" href="main.css">
+	</head>
+<body>
+<h1>Анкета посетителя ресторана</h1>
+<form name="zapoln" id="forms">
+<fieldset>
+<legend>КОНТАКТНАЯ ИНФОРМАЦИЯ</legend>
+<div><label>Имя</label><input type="text"></div>
+<div><label>Телефон</label><input type="text"></div>
+<div><label>Email</label><input type="text"></div>
+<div><label>Дата посещения</label><input type="text"></div>
+</fieldset>
+
+<fieldset>
+<legend>ПЕРСОНАЛЬНАЯ ИНФОРМАЦИЯ</legend>
+<div><label>Возраст</label><input type="number" min="1" max="100"></div>
+<div class="kuxn"><label>Любимая кухня</label><select><option>Русская</option><option>Итальянская</option></select></div>
+<div><label>Какие блюда Вы хотели бы увидеть в меню?</label><textarea></textarea></div>
+</fieldset>
+
+<fieldset>
+<legend>ОЦЕНКА НАШЕГО ЗАВЕДЕНИЯ</legend>
+<div>Почему Вы выбрали наше заведение?</div>
+<div><input type="radio" name="chose1">Недалеко от дома/работы</div>
+<div><input type="radio" name="chose1">Увидел рекламу</div>
+<div><input type="radio" name="chose1">Посоветовали</div>
+<div><input type="radio" name="chose1">Оптимальное соотношение цены и качества</div>
+<div>Вы будете рекомендовать наше заведение своим знакомым?</div>
+<div><input type="radio" name="chose2">Да</div>
+<div><input type="radio" name="chose2">Нет</div>
+</fieldset>
+<input type="submit" value="Отправить" class="cnopka">
+</form>
+<hr>
+<div class="js_cnopki">
+<input type="button" value="Колличество форм" id = "button1">
+<input type="button" value="Имя форм" id = "button2">
+<input type="button" value="Имя 1 формы" id = "button3">
+<input type="button" value="количество элементов в форме" id = "button4">
+<input type="button" value="количество input" id = "button5">
+<input type="button" value="значение 1-го элементов формы" id = "button6">
+<input type="button" value="значение любого элементов с именем" id = "button7">
+<input type="button" value="проверка на имя" id = "button8" name="q">
+</div>
+<script>
+button1.onclick = function(){
+alert(document.getElementsByTagName("form").length);}
+button2.onclick = function(){
+alert(document.getElementsByTagName("form")[0].name);
+}
+button3.onclick = function(){
+alert(document.getElementsByTagName("form")[0].name);
+}
+button4.onclick = function(){
+alert(document.getElementsByTagName("form")[0].children.length);
+}
+button5.onclick = function(){
+alert(document.getElementById('forms').querySelectorAll('input').length);
+}
+button6.onclick = function(){
+alert(document.getElementById('forms').querySelector('input').type);
+}
+button7.onclick = function(){
+alert(document.getElementsByTagName("form")[0].querySelector('input[name="chose1"]').name);
+}
+button8.onclick = function(){
+alert(Boolean(this.name))
+}
+</script>
+</body>
+</html>

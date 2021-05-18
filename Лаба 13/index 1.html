@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/main2.css">
+	<title>Document</title>
+</head>
+<body>
+<fieldset id="locl"></fieldset>
+<script>
+'use strict'
+document.getElementById('locl').innerHTML = "<legend>Ваша анкета(localStorage)</legend>" + localStorage.getItem('test');
+</script>
+</body>
+</html>

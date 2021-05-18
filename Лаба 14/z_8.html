@@ -1,0 +1,19 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Alert and document</title>
+	<link rel="stylesheet" href="main.css">
+	</head>
+<body>
+<script>
+document.cookie = "user=John";
+delete_cookie ( "user" );
+function delete_cookie ( cookie_name ){
+  let cookie_date = new Date ( );
+  cookie_date.setTime ( cookie_date.getTime() - 1 );
+  document.cookie = cookie_name += "=; expires=" + cookie_date.toGMTString();
+}
+
+</script>
+</body>
+</html>

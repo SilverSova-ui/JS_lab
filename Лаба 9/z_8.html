@@ -1,0 +1,24 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Alert and document</title>
+	<link rel="stylesheet" href="main.css">
+	</head>
+<body>
+<select id="genres">
+	<option value="rock">Рок</option>
+	<option value="blues">Блюз</option>
+	<input type = "button" value="добавить классику" onclick="classic_fun()" id="zero">
+</select>
+<script>
+alert(genres.options[genres.selectedIndex].innerHTML);
+genres.selectedIndex = 1;
+
+function classic_fun(){
+let options = new Option("Классик", "classic");
+genres.append(options);
+zero.style.display = "none";
+}
+</script>
+</body>
+</html>

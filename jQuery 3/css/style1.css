@@ -1,0 +1,17 @@
+#glav{
+	display:flex;
+	flex-wrap: wrap;
+}
+
+.block{
+	width:10em;
+	height:10em;
+	margin-top:0.5em;
+	margin-left:0.5em;
+	background:silver;
+}
+
+p{
+	margin-left: 3.5em;
+    margin-top: 4em;
+}

@@ -1,0 +1,19 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Alert and document</title>
+	<link rel="stylesheet" href="main.css">
+	</head>
+<body>
+	<select id="zero">
+		<option value="apple">Яблоко</option>
+		<option value="pear">Груша</option>
+		<option value="banana">Банан</option>
+	</select>
+	<script>
+		zero.options[2].selected = true;
+		zero.selectedIndex = 2;
+		zero.value = 'banana';
+	</script>
+</body>
+</html>

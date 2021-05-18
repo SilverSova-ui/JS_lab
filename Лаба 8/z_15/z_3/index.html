@@ -1,0 +1,40 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Alert and document</title>
+	</head>
+<body>
+<form>
+<p>Регистрация</p>
+<p>Если вы новый пользователь, можете завести учетную запись</p>
+<input>
+<input>
+<input>
+<input>
+<input>
+<input>
+</form>
+<script>
+  document.body.firstElementChild.style.background = "silver";
+  document.body.firstElementChild.style.width="40em";
+  document.body.firstElementChild.style.height="20em";
+  document.body.firstElementChild.style.display="flex";
+  document.body.firstElementChild.style.flexDirection ="column";
+  document.body.firstElementChild.children[0].style.fontSize="1.5em"
+  document.body.firstElementChild.children[0].style.margin="0";
+  document.body.firstElementChild.children[0].style.marginLeft="0.5em";
+  document.body.firstElementChild.children[0].style.marginTop="0.5em";
+  document.body.firstElementChild.children[1].style.fontSize="1em";
+  document.body.firstElementChild.children[1].style.margin="0";
+  document.body.firstElementChild.children[1].style.marginLeft="0.5em";
+  document.body.firstElementChild.children[1].style.marginTop="0.5em";
+  document.body.firstElementChild.children[1].style.marginBottom="0.5em";
+  for (let elem of document.body.firstElementChild) {
+	elem.style.marginLeft="0.5em";
+	elem.style.marginBottom="0.5em";
+	elem.style.width="150px";
+  }
+  
+</script>
+</body>
+</html>

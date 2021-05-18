@@ -1,0 +1,22 @@
+.redBlock{
+	display:flex;
+	flex-wrap: wrap;
+	background: red;
+	width:50em;
+}
+
+button{
+	padding:2em;
+	position: relative;
+    top:1em;
+    left:21em;
+}
+
+.YellowBlock{
+	background:yellow;
+	width:4em;
+	height:4em;
+	margin-top:0.5em;
+	margin-left:0.5em;
+	margin-bottom:0.5em;
+}

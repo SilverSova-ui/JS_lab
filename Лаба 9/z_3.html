@@ -1,0 +1,25 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Alert and document</title>
+	<link rel="stylesheet" href="main.css">
+	</head>
+<body>
+  <form id="zero">
+    <fieldset name="userFields">
+      <legend>info</legend>
+      <input name="login" type="text">
+    </fieldset>
+  </form>
+
+  <script>
+    alert(zero.elements.login); // <input name="login">
+
+    let field = zero.elements.userFields;
+    alert(field); // HTMLFieldSetElement
+
+    // мы можем достать элемент по имени как из формы, так и из fieldset с ним
+    alert(field.elements.login == zero.elements.login); // true
+  </script>
+</body>
+</html>

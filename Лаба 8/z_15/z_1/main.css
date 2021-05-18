@@ -1,0 +1,13 @@
+input{
+width:30em;
+padding:0.5em;}
+
+p{
+margin-left:0.5em;}
+
+p:nth-child(8){
+margin-left:10.5em;}
+
+button{
+	font-size:1em;
+	font-weight:bold;

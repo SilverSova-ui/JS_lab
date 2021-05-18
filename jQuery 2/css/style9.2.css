@@ -1,0 +1,14 @@
+div:nth-of-type(3) img{
+	width:15em;
+	height:15em;
+}
+
+div:first-child,div:nth-of-type(2){
+	margin-left:22.5em;
+	font-weight: bold;
+}
+
+div:nth-of-type(3){
+margin-top:0.5em;
+margin-left: 17.5em;
+}

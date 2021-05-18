@@ -1,0 +1,22 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Alert and document</title>
+	<link rel="stylesheet" href="main.css">
+	</head>
+<body>
+<form name ="my">
+	<input name="one" value="1">
+	<input name="two" value="2">
+</form>
+<script>
+	// получаем форму
+	let my_form = document.forms.my; // <form name="my"> element
+	
+	// получаем элемент
+	let elem = form.element.one; // <input name="one"> element
+	
+	alert(elem.value);// 1
+</script>
+</body>
+</html>

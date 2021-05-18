@@ -1,0 +1,20 @@
+div{
+	width: 5em;
+	height: 5em;}
+
+#table{
+    display: flex;
+    flex-wrap: wrap;
+    border: 0.5em solid black;
+    width: 40em;
+    height: 40em;
+    background: #F4A460;
+    margin-top:2em;
+}
+
+img{
+	margin:auto;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    width: 4em;
+}

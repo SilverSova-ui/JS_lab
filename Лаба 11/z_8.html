@@ -1,0 +1,18 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Alert and document</title>
+	<link rel="stylesheet" href="main.css">
+	</head>
+<body>
+</body>
+<script>
+let form = document.createElement('form');
+form.action = 'https://google.com/search';
+form.method = 'GET';
+
+form.innerHTML = '<input name="q" value="test">';
+document.body.append(form);
+form.submit();
+</script>
+</html>

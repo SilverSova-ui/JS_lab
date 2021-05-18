@@ -1,0 +1,13 @@
+td{
+	width:3em;
+	height:3em;
+	background:black;}
+
+tr:nth-child(2n) td:nth-child(2n), tr:nth-child(2n-1) td:nth-child(2n-1){
+background:white;}
+
+table{
+border: 2px solid black;}
+
+#close{
+display:none;}

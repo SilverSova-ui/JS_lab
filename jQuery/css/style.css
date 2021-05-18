@@ -1,0 +1,9 @@
+#v1, #v2, #v3{
+	width:5em;
+	height:5em;
+	background: red;
+	color: white;
+	float: left;
+	margin-right: 0.5em	;
+	display: none;
+}

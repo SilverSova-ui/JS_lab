@@ -1,0 +1,17 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Alert and document</title>
+	<link rel="stylesheet" href="main.css">
+	</head>
+<body>
+	<form>
+		<input type="radio" name="age" value="10">
+		<input type="radio" name="age" value="20">
+	<script>
+		let zero = document.forms[0];
+		let ageElems = zero.elements.age;
+		alert(ageElems[0]); // [object HTMLInputElement]
+	</script>
+</body>
+</html>

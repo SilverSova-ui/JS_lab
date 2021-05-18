@@ -1,0 +1,19 @@
+.content{
+	display:flex;
+}
+
+button{
+	margin-top:0.5em;
+}
+
+fieldset{
+	margin-top:0.5em;
+	border-radius:0.5em;
+	width:50em;
+}
+
+#sidor{
+	background: url(../img/sidorovich.jpg) no-repeat;
+	margin-left:10em;
+	margin-top:0.5em;
+	height: 60em;}

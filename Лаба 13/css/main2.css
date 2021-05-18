@@ -1,0 +1,12 @@
+#locl{
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+	width: 20em;
+	position: fixed;
+	top: 25vh;
+	left: 40em;
+}
+
+p{
+margin:0.5em 0 0 0.5em;}

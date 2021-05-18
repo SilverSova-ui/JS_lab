@@ -1,0 +1,16 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Alert and document</title>
+	<link rel="stylesheet" href="main.css">
+	</head>
+<body>
+<input type="text" id="input">
+<script>
+	input.oncut = input.oncopy = input.onpaste = function(event) {
+		alert(event.type + ' - ' + event.clipboarData.getData('text/plan'));
+		return false;
+	};
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Alert and document</title>
+	<link rel="stylesheet" href="main.css">
+	</head>
+<body>
+	<select id="zero" multiple>
+		<option value="blues" selected>Блюз</option>
+		<option value="rock" selected>Рок</option>
+		<option value="classic">Классика</option>
+	</select>
+	
+	<script>
+	let sel = Array.from(zero.options).filter(option => option.selected).map(option => option.value);
+		
+	alert(sel);
+	</script>
+</body>
+</html>

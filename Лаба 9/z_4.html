@@ -1,0 +1,22 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Alert and document</title>
+	<link rel="stylesheet" href="main.css">
+	</head>
+<body>
+	<form id="zero">
+		<input name="login">
+	</form>
+	<script>
+		alert(zero.elements.login == zero.login); // true, ведь это одинаковые <input>
+		
+		zero.login.name = "username";
+		 // form.elements обновили свои имена:
+		alert(zero.elements.login);// undefined
+		alert(zero.elements.username);// input
+		 // а в form мы можем использовать оба имени: новое и старое
+		alert(zero.elements.username == zero.login); // true
+	</script>
+</body>
+</html>

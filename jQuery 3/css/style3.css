@@ -1,0 +1,21 @@
+#sharik{
+	border-radius:50%;
+	width:10em;
+	height:10em;
+	background:OrangeRed;
+	border:0.5em black solid;
+}
+
+.latok{
+	width:25em;
+	height:25em;
+	background:silver;
+	border:1em solid black;
+	margin:auto;
+	border-radius:50%;
+}
+
+.izmena{
+	background:yellow;
+	border:1em solid brown;
+}
